@@ -1,0 +1,6 @@
+{
+    "C_Cpp.autocompleteAddParentheses": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.useInlineCompletions": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
