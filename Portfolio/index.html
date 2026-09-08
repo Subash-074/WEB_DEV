@@ -1,114 +1,297 @@
-
 <!doctype html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Subash's Portfolio Website</title>
-
-    <link rel="stylesheet" href="style.css" />
-
+    <meta
+      name="description"
+      content="Portfolio of Subash Sapkota, a Computer Science student building thoughtful digital experiences."
+    />
+    <title>Subash Sapkota | Developer & Problem Solver</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
-
   <body>
-    <!-- Navigation Bar -->
-
-    <nav>
-      <div class="logo">Subash's Portfolio</div>
-
-      <ul>
-        <li>Home</li>
-
-        <li>About</li>
-
-        <li>Projects</li>
-
-        <li>Contact</li>
-      </ul>
-    </nav>
-
-    <!-- Main Content -->
+    <div class="grain"></div>
+    <header class="site-header">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Subash Sapkota home"
+          ><span class="brand-mark">S</span
+          ><span>subash<span class="brand-dot">.</span></span></a
+        >
+        <button
+          class="menu-toggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+        <div class="nav-links">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#work">Work</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a
+            class="icon-button theme-toggle"
+            href="#"
+            aria-label="Switch color theme"
+            ><i data-lucide="sun"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <!-- Hero Section -->
-
-      <section class="hero">
-        <div class="hero-left">
-          <div class="one">Welcome To My Website.</div>
-
-          <div class="two">
-            I am
-            <span class="bold"> &lt; Subash Sapkota /&gt; </span>
+      <section class="hero shell" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Available for new opportunities
+          </p>
+          <h1>Building with<br /><em>curiosity</em> &amp; code.</h1>
+          <p class="hero-text">
+            I’m Subash, a Computer Science student in Berlin exploring the space
+            where useful software, artificial intelligence, and elegant
+            interfaces meet.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work"
+              >Explore my work <i data-lucide="arrow-up-right"></i></a
+            ><a
+              class="text-link"
+              href="https://www.linkedin.com/in/subash-sapkota-420234264/"
+              target="_blank"
+              rel="noreferrer"
+              >Connect on LinkedIn <i data-lucide="arrow-up-right"></i
+            ></a>
           </div>
-
-          <div class="button-container">
-            <button class="btn">Contact Me</button>
-
-            <button class="btn">Services</button>
+          <div class="hero-meta">
+            <span>Currently learning</span><strong>Applied AI &amp; data</strong
+            ><span class="meta-line"></span><span>Based in</span
+            ><strong>Berlin, DE</strong>
           </div>
         </div>
-
-        <div class="hero-right">
-          <img class="image" src="subashimg.png" alt="Image of Subash" />
+        <div class="hero-visual reveal reveal-delay">
+          <div class="portrait-frame">
+            <div class="portrait-label">01 / PROFILE</div>
+            <img src="subashimg.png" alt="Portrait of Subash Sapkota" />
+            <div class="portrait-stamp">CS<br />/24</div>
+          </div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="floating-note">
+            <span class="note-icon">✦</span
+            ><span>Make it<br /><strong>meaningful.</strong></span>
+          </div>
         </div>
       </section>
 
-      <!-- Projects Section -->
+      <section class="marquee" aria-label="Areas of interest">
+        <div class="marquee-track">
+          <span>WEB DEVELOPMENT</span><b>✦</b><span>PYTHON</span><b>✦</b
+          ><span>DATA &amp; AI</span><b>✦</b><span>APPLIED MATHEMATICS</span
+          ><b>✦</b><span>WEB DEVELOPMENT</span><b>✦</b><span>PYTHON</span>
+        </div>
+      </section>
 
-      <section class="projects">
-        <div class="project-container">
-          <!-- Project 1 -->
-
-          <div class="project">
-            <div class="project-image">
-              <img src="projectimg.png" alt="Alien Invasion Game" />
-            </div>
-
-            <div class="project-info">
-              <div class="text">Alien Invasion Game</div>
-
-              <p>
-                This is an alien invasion game built using Python, where you can
-                shoot aliens with your gun and your score becomes higher and
-                higher.
-              </p>
-
-              <div class="btn">Learn More</div>
-            </div>
+      <section class="section shell about-section" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / About me</p>
+          <h2>Learning deeply,<br /><span>building openly.</span></h2>
+        </div>
+        <div class="about-content reveal reveal-delay">
+          <p class="large-copy">
+            I like taking complicated ideas and turning them into experiences
+            people can actually use. My work moves between frontend experiments,
+            Python projects, and the fundamentals that make intelligent systems
+            possible.
+          </p>
+          <p>
+            Outside the browser, I’m drawn to linear algebra, calculus,
+            statistics, and the quiet satisfaction of understanding how things
+            work under the hood.
+          </p>
+          <div class="skill-list">
+            <span>HTML / CSS</span><span>JavaScript</span><span>Python</span
+            ><span>SQL</span><span>Django</span><span>Data Science</span>
           </div>
+        </div>
+      </section>
 
-          <!-- Project 2 -->
-
-          <div class="project row-reverse">
-            <div class="project-image">
-              <img src="projectimg.png" alt="Alien Invasion Game" />
+      <section class="section work-section shell" id="work">
+        <div class="work-top reveal">
+          <div>
+            <p class="eyebrow">03 / Selected work</p>
+            <h2>Things I’ve<br /><span>been making.</span></h2>
+          </div>
+          <a
+            class="circle-link"
+            href="https://github.com/Subash-074?tab=repositories"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="View all GitHub repositories"
+            ><i data-lucide="arrow-up-right"></i
+          ></a>
+        </div>
+        <div class="filter-bar reveal">
+          <button class="filter active" data-filter="all">All work</button
+          ><button class="filter" data-filter="web">Web</button
+          ><button class="filter" data-filter="python">Python</button
+          ><button class="filter" data-filter="data">Data &amp; AI</button>
+        </div>
+        <div class="project-grid">
+          <article
+            class="project-card project-featured reveal"
+            data-category="python"
+          >
+            <div class="project-image dark-image">
+              <img
+                src="projectimg.png"
+                alt="Alien Invasion game artwork"
+              /><span class="project-number">01</span>
             </div>
+            <div class="project-body">
+              <div>
+                <p class="project-type">Python / Game</p>
+                <h3>Alien Invasion</h3>
+                <p>
+                  A fast-paced arcade game built from the ground up in Python,
+                  with progressive scoring and a little bit of chaos.
+                </p>
+              </div>
+              <a
+                class="project-arrow"
+                href="https://github.com/Subash-074/Alien-Invasion-Making-A-Game-With-Python-"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Alien Invasion on GitHub"
+                ><i data-lucide="arrow-up-right"></i
+              ></a>
+            </div>
+          </article>
+          <article class="project-card reveal reveal-delay" data-category="web">
+            <div class="project-image project-block mint">
+              <span class="code-symbol">&lt;/&gt;</span
+              ><span class="project-number">02</span>
+            </div>
+            <div class="project-body">
+              <div>
+                <p class="project-type">HTML / CSS / JavaScript</p>
+                <h3>Myntra Clone</h3>
+                <p>
+                  A considered e-commerce interface recreation focused on
+                  layout, interaction, and responsive detail.
+                </p>
+              </div>
+              <a
+                class="project-arrow"
+                href="https://github.com/Subash-074/myntra-clone"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Myntra Clone on GitHub"
+                ><i data-lucide="arrow-up-right"></i
+              ></a>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="data">
+            <div class="project-image project-block coral">
+              <span class="data-symbol">∑<small>data</small></span
+              ><span class="project-number">03</span>
+            </div>
+            <div class="project-body">
+              <div>
+                <p class="project-type">Jupyter / Analysis</p>
+                <h3>Data Science Projects</h3>
+                <p>
+                  Experiments and notebooks exploring the patterns hidden inside
+                  real-world data.
+                </p>
+              </div>
+              <a
+                class="project-arrow"
+                href="https://github.com/Subash-074/Data-Science-Projects-"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Data Science Projects on GitHub"
+                ><i data-lucide="arrow-up-right"></i
+              ></a>
+            </div>
+          </article>
+          <article class="project-card reveal" data-category="python">
+            <div class="project-image project-block ink">
+              <span class="terminal-symbol">$ python<br /><i>build()</i></span
+              ><span class="project-number">04</span>
+            </div>
+            <div class="project-body">
+              <div>
+                <p class="project-type">Python / Backend</p>
+                <h3>Notes App</h3>
+                <p>
+                  A practical notes project built while sharpening Python
+                  development fundamentals.
+                </p>
+              </div>
+              <a
+                class="project-arrow"
+                href="https://github.com/Subash-074/Notes-app"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="View Notes App on GitHub"
+                ><i data-lucide="arrow-up-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-            <div class="project-info">
-              <div class="text">Alien Invasion Game</div>
-
-              <p>
-                This is an alien invasion game built using Python, where you can
-                shoot aliens with your gun and your score becomes higher and
-                higher.
-              </p>
-
-              <div class="btn">Learn More</div>
+      <section class="contact-section" id="contact">
+        <div class="shell contact-inner">
+          <div class="reveal">
+            <p class="eyebrow">04 / Let’s talk</p>
+            <h2>Have a good idea?<br /><em>Let’s make it real.</em></h2>
+          </div>
+          <div class="contact-side reveal reveal-delay">
+            <p>
+              Whether you want to collaborate, share an idea, or just say hello,
+              my inbox is open.
+            </p>
+            <a class="email-link" href="mailto:sapkotasubash784@gmail.com"
+              >sapkotasubash784@gmail.com <i data-lucide="arrow-up-right"></i
+            ></a>
+            <div class="contact-details">
+              <span><i data-lucide="map-pin"></i> Berlin, Germany</span
+              ><span
+                ><i data-lucide="send"></i> Open to thoughtful
+                collaborations</span
+              >
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/Subash-074"
+                target="_blank"
+                rel="noreferrer"
+                >GitHub <i data-lucide="arrow-up-right"></i></a
+              ><a
+                href="https://www.linkedin.com/in/subash-sapkota-420234264/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn <i data-lucide="arrow-up-right"></i
+              ></a>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer shell">
+      <span>© 2026 Subash Sapkota</span
+      ><span>Designed &amp; built with intention.</span
+      ><a href="#home">Back to top ↑</a>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
