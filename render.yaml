@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: subash-portfolio
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: ./Portfolio
+    pullRequestPreviewsEnabled: true
+    previews:
+      generation: automatic
